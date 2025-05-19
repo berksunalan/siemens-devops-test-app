@@ -22,7 +22,7 @@ MAX_DESCRIPTION_LENGTH = 2000
 # Only allow subdomains of testdevops.com
 ALLOWED_DOMAIN_REGEX = re.compile(r"^https://([a-zA-Z0-9-]+\.)*testdevops\.com(:\d+)?$")
 
-# Simple malicious pattern detection (expand as needed)
+# Simple malicious pattern detection
 MALICIOUS_PATTERNS = [
     r"<script.*?>.*?</script.*?>",  # XSS
     r"(;|\|\||&&|\$\(|`|\bDROP\b|\bDELETE\b|\bINSERT\b|\bUPDATE\b|\bSELECT\b|\bUNION\b)",  # SQLi/command
